@@ -87,10 +87,16 @@ const selectPokemon =  async (pokemon) =>{
 </template>
 
 <style scoped>
+
 .card-list {
   max-height: 75vh;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+@media (max-width: 768px) {
+.card-list {
+  max-height: 42vh;
+}
 }
 
 </style>
